@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delegate.cs" />
+    <Compile Include="DerivedDelegate.cs" />
+    <Compile Include="HelloWorld.cs" />
+    <Compile Include="InClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
