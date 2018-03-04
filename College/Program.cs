@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace College
 {
@@ -25,9 +26,25 @@ namespace College
                 Console.WriteLine("Element [{0}] = {1}", i, j);
             }
 
+            //Using collection arrayList;
+
+            ArrayList al = new ArrayList();
+
+            al.Add(25);
+            al.Add(50);
+            al.Add(26);
+
+            Console.WriteLine(al.Capacity);
+            Console.WriteLine(al.Count);
+            al.Sort();
+            foreach (int i in al)
+            {
+                Console.WriteLine(i);
+            }
+
             DerivedDelegate derivedDelegate = new DerivedDelegate();
             addDelegate ad = new addDelegate(derivedDelegate.addNumber);
-            ad.Invoke(20, 30);
+            ad.Invoke(20, 60);
             addStrint dstr = new addStrint(Delegate.addString);
             string str = dstr.Invoke("Sanidhya");
             Console.WriteLine(str);
